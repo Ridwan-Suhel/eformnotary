@@ -75,6 +75,9 @@ header .bottom-header .logo img{
 	width: 100%;
 	display: block;
 }
+.burger-menu{
+	display: none;
+}
 header .bottom-header .menu{
 	width: 75%;
 	float: right;
@@ -104,7 +107,7 @@ header .bottom-header .menu ul li a:hover{
 /*hero-section start from here*/
 .hero-section{
 	/*background-image:  linear-gradient(90deg, rgba(0,0,0,0.9)0, rgba(0,0,0,0.9)100%);*/
-	background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 100%), url(../img/hero-bg.jpg);
+	background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 100%), url(../img/hero.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -269,6 +272,7 @@ header .bottom-header .menu ul li a:hover{
 }
 .features-section .box-wrapper{
 	overflow: hidden;
+	margin-top: 40px;
 }
 .features-section .box-wrapper .f-box{
 	width: 30%;
@@ -317,15 +321,125 @@ header .bottom-header .menu ul li a:hover{
 	font-size: 15px;
 	text-transform: uppercase;
 	cursor: pointer;
+	transition: .5s;
+}
+.features-section .see-more .btn:hover{
+	 background: #BD233F;
+	 color: #fff;
+}
+/*features-section end here*/
+/*contact-section start*/
+.contact-section{
+	padding: 70px 0px;
+	background: #090909;
+}
+.contact-section .common-box{
+	float: left;
+}
+.contact-section .common-box h2{
+	color: #BD233F;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+.contact-section .common-box .info{
+	list-style: none;
+}
+.contact-section .common-box .info li{
+	color: #999;
+	margin-top: 15px;
+	transition: .3s;
+}
+.contact-section .common-box .info li i{
+	color: #BD233F;
+	margin-right: 8px;
+	transition: .3s;
+}
+.contact-section .common-box .social-links{
+	margin-top: 50px;
+}
+.contact-section .common-box .social-links li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+}
+.contact-section .common-box .social-links li a{
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	background: #ddd;
+	display: inline-block;
+	line-height: 30px;
+	border-radius: 3px;
+	transition: .3s;
+}
+.contact-section .common-box .social-links li a:hover{
+	background: #BD233F;
+	color: #fff;
 }
 
+.contact-section .common-box .info li:hover{
+	color: #BD233F;
+	cursor: pointer;
+}
+.contact-section .common-box .info li:hover i{
+	color: #BD233F;
+}
+.contact-section .useful-links .info li i{
+	color: #999;
+}
+.contact-section .sub-form{
 
+}
+.contact-section .sub-form p{
+	color: #999;
+	margin: 20px 0px 30px 0px;
+}
 
-
-
-
-
-
-
-
-/*features-section end here*/
+.contact-section .sub-form form{
+	
+}
+.contact-section .sub-form [type="email"]{
+	padding: 12px 0px 12px 5px;
+	border: 1px solid #ddd;
+	background: transparent;
+	border-radius: 4px;
+	color: #fff;
+	outline: none;
+}
+.contact-section .sub-form form [type="submit"]{
+	padding: 13.5px 30px;
+	background: #BD233F;
+	color: #fff;
+	border: none;
+	margin-left: -20px;
+	transition: .3s;
+	cursor: pointer;
+	outline: none;
+}
+.contact-section .sub-form form [type="submit"]:hover{
+	background: #a3011f;
+}
+.contact-section .common-box.links{
+	width: 40%;
+}
+.contact-section .common-box.useful-links{
+	width: 28%;
+}
+.contact-section .common-box.sub-form{
+	width: 28%;
+}
+/*contact-section end*/
+/*contact-section start*/
+footer{
+	padding: 25px 0px;
+	background: #535D69;
+}
+footer p{
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+/*contact-section end*/
